@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+
+.banner-text {
+	font-family: 'Pacifico', cursive;
+	font-size: 4.0rem;
+	color: $mountain;
+	opacity: 1.0;
+	padding-top:60px;
+}
+.banner-text-small {
+	font-size: 1.2rem;
+	color: $oil;
+	opacity: 1.0;
+	
+}
+.cursive{
+	font-family: 'Pacifico', cursive;
+}
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  color: $oil;
+}
+h2 {
+  font-size: 4.0rem;
+
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mountain {
+	color: $mountain;
+}
+.mountain-dark {
+	color: $mountain-dark;
+}
+.cover{
+	height: 100%;
+}
+.circleBase {
+	border-radius: 50%;
+}
+.circle {	
+    width: 125px;
+    height: 125px;
+    background: #e6e6e6;
+}
+.img-pad {
+  padding-bottom: 20px;
+}
+i {
+    color:$oil;
+    margin-right:10px;
+    margin-left:10px;}
+.circle-pad{
+	padding-bottom:5px;
+	margin-left:24px;
+}
+.pad-bot{
+	margin-bottom:50px;
+}
+.pad-top{
+	margin-top:50px;
+}
+.pad-right{
+  margin-right:10px;
+}
+.section-pad-top {
+  margin-top: 90px;
+}
+.init-section-pad-top {
+  margin-top: 90px;
+}
+.section-pad-bot {
+  margin-bottom: 90px;
+}
+.small-pad-top{
+  margin-top:25px;
+}
+.pad-icons{
+  margin-right:10px;
+  color: $oil;
+}
+.nav-pad {
+  padding-top:20px;
+}
+hr {
+    border-top:1px dotted #000;
+}
+.bg-mountain{
+	background-color: $mountain;
+}
+.button{
+	margin-left:15px;
+	margin-right:15px;
+}
+@media only screen and (max-width: 40em) { 
+	
+	.banner-text {
+		font-size: 3.0rem;
+	}
+
+}
+
+@media only screen and (min-width: 40.0625em) {
+	
+	.lower{
+		padding-bottom:55px;
+	}
+	.pad-circle{
+		margin-top:80px;
+	}
+  .xsmall-pad-top{
+  margin-top: 10px;
+}
+}
+.white {
+	color:$white;
+}
+
+$global-radius: 4px;
+
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: $global-radius;
+}
+
+.image-overlay-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.overlay-slide-in-left {
+  
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-overlay-content {
+    background-color: #333333;
+    transform: translateX(-110%);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 7px #ccc;
+  }
+  
+  h2{
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 40%;
+    color: #000;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  }
+  
+  p {
+  margin-top:10%;
+    opacity: 0;
+    color: $white;
+    transition: all 0.2s linear;
+  }
+
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px; 
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border-radius: 7px;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+
+  &:hover .image-overlay-content {
+    transform: translateX(0px);
+  } 
+
+  &:hover img {
+    transform: translateX(80%);
+    transition-delay: 0.1s;
+  }
+
+  &:hover p{
+    opacity: 1;
+    transition-delay: 0.4s;
+  }
+}
+.full{
+  width:100%;
+}
+.cover {
+        background-image: url("../images/mountain.png");
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        
+}
+.right{ text-align: right;}
+.left{ text-align: left;}
+.middle{margin-right: 20px;}
+
+@media only screen and (max-width: 40em) { 
+  .mobile-img-pad {
+  padding-bottom: 20px;
+}
+  .gallery{padding-bottom:20px;}
+
+  #about {
+    text-align: center;
+  }
+  .bump{
+    margin-bottom: 20px;
+  }
+  .init-section-pad-top {
+    margin-top: 20px;
+  }
+  .banner-text {
+    padding-top: 20px;
+  }
+
+}
+
+nav {
+    box-shadow: 0px 0px 6px $light-gray;
+}
+.subtext{
+}
+
+#img1 {
+}
+#img2 {
+
+}
+#myCanvas2 {
+  position:  absolute;
+  background-color: #ffffff;
+}
+#myCanvas5 {
+  position:  absolute;
+  background-color: #4E606E;
+
+}
+#myCanvas6 {
+  position:  absolute;
+  background-color: #415D8D;
+
+}
+#myCanvas7 {
+  position:  absolute;
+  background-color: #C3BE9F;
+
+}
+#myCanvas8 {
+  position:  absolute;
+  background-color: #071D56;
+
+}
+#myCanvas9 {
+  position:  absolute;
+  background-color: #7E8995;
+
+}
+#myCanvas10 {
+  position:  absolute;
+  background-color: #7692B8;
+
+}
+#myCanvas {
+ position:  absolute;
+
+}
+#myCanvas3 {
+  position:  absolute;
+
+}
+#myCanvas4 {
+  position:  absolute;
+
+}
